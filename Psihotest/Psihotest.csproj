@@ -1,0 +1,998 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{069E4AC6-4B1E-43E9-B906-F313D76F3515}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Psihotest</RootNamespace>
+    <AssemblyName>Psihotest</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>loco.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\protokol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\protokol.Designer.cs">
+      <DependentUpon>protokol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha6\DPO6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha6\DPO6.Designer.cs">
+      <DependentUpon>DPO6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha7\DPO7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha7\DPO7.Designer.cs">
+      <DependentUpon>DPO7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha8\DPO8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha8\DPO8.Designer.cs">
+      <DependentUpon>DPO8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha6\DZ6_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha6\DZ6_1.Designer.cs">
+      <DependentUpon>DZ6_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha6\DZ6_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha6\DZ6_2.Designer.cs">
+      <DependentUpon>DZ6_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha7\DZ7_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha7\DZ7_1.Designer.cs">
+      <DependentUpon>DZ7_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha7\DZ7_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha7\DZ7_2.Designer.cs">
+      <DependentUpon>DZ7_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha8\DZ8_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha8\DZ8_1.Designer.cs">
+      <DependentUpon>DZ8_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha8\DZ8_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha8\DZ8_2.Designer.cs">
+      <DependentUpon>DZ8_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha6\Fenomen6_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha6\Fenomen6_1.Designer.cs">
+      <DependentUpon>Fenomen6_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha6\Fenomen6_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha6\Fenomen6_2.Designer.cs">
+      <DependentUpon>Fenomen6_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha7\Fenomen7_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha7\Fenomen7_1.Designer.cs">
+      <DependentUpon>Fenomen7_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha7\Fenomen7_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha7\Fenomen7_2.Designer.cs">
+      <DependentUpon>Fenomen7_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha8\Fenomen8_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha8\Fenomen8_1.Designer.cs">
+      <DependentUpon>Fenomen8_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha8\Fenomen8_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha8\Fenomen8_2.Designer.cs">
+      <DependentUpon>Fenomen8_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha6\katamnez6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha6\katamnez6.Designer.cs">
+      <DependentUpon>katamnez6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha7\katamnez7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha7\katamnez7.Designer.cs">
+      <DependentUpon>katamnez7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha8\katamnez8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha8\katamnez8.Designer.cs">
+      <DependentUpon>katamnez8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha6\meropriatia6_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha6\meropriatia6_1.Designer.cs">
+      <DependentUpon>meropriatia6_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha6\meropriatia6_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha6\meropriatia6_2.Designer.cs">
+      <DependentUpon>meropriatia6_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha7\meropriatia7_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha7\meropriatia7_1.Designer.cs">
+      <DependentUpon>meropriatia7_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha7\meropriatia7_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha7\meropriatia7_2.Designer.cs">
+      <DependentUpon>meropriatia7_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha8\meropriatia8_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha8\meropriatia8_1.Designer.cs">
+      <DependentUpon>meropriatia8_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha8\meropriatia8_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha8\meropriatia8_2.Designer.cs">
+      <DependentUpon>meropriatia8_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha6\teor6_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha6\teor6_1.Designer.cs">
+      <DependentUpon>teor6_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha6\teor6_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha6\teor6_2.Designer.cs">
+      <DependentUpon>teor6_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha7\teor7_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha7\teor7_1.Designer.cs">
+      <DependentUpon>teor7_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha7\teor7_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha7\teor7_2.Designer.cs">
+      <DependentUpon>teor7_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha8\teor8_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha8\teor8_1.Designer.cs">
+      <DependentUpon>teor8_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha8\teor8_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha8\teor8_2.Designer.cs">
+      <DependentUpon>teor8_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha2\Meropriatiya2_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha2\Meropriatiya2_2.Designer.cs">
+      <DependentUpon>Meropriatiya2_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha3\DPO3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha3\DPO3.Designer.cs">
+      <DependentUpon>DPO3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha4\DPO4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha4\DPO4.Designer.cs">
+      <DependentUpon>DPO4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha5\DPO5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha5\DPO5.Designer.cs">
+      <DependentUpon>DPO5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha3\DZ3_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha3\DZ3_1.Designer.cs">
+      <DependentUpon>DZ3_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha3\DZ3_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha3\DZ3_2.Designer.cs">
+      <DependentUpon>DZ3_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha4\DZ4_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha4\DZ4_1.Designer.cs">
+      <DependentUpon>DZ4_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha4\DZ4_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha4\DZ4_2.Designer.cs">
+      <DependentUpon>DZ4_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha5\DZ5_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha5\DZ5_1.Designer.cs">
+      <DependentUpon>DZ5_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha5\DZ5_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha5\DZ5_2.Designer.cs">
+      <DependentUpon>DZ5_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha3\Fenomen3_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha3\Fenomen3_1.Designer.cs">
+      <DependentUpon>Fenomen3_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha3\fenomen3_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha3\fenomen3_2.Designer.cs">
+      <DependentUpon>fenomen3_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha4\Fenomen4_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha4\Fenomen4_1.Designer.cs">
+      <DependentUpon>Fenomen4_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha4\fenomen4_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha4\fenomen4_2.Designer.cs">
+      <DependentUpon>fenomen4_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha5\Fenomen5_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha5\Fenomen5_1.Designer.cs">
+      <DependentUpon>Fenomen5_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha5\fenomen5_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha5\fenomen5_2.Designer.cs">
+      <DependentUpon>fenomen5_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha3\katamnez3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha3\katamnez3.Designer.cs">
+      <DependentUpon>katamnez3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha4\katamnez4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha4\katamnez4.Designer.cs">
+      <DependentUpon>katamnez4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha5\katamnez5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha5\katamnez5.Designer.cs">
+      <DependentUpon>katamnez5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha3\meropriyatia3_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha3\meropriyatia3_1.Designer.cs">
+      <DependentUpon>meropriyatia3_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha3\meropriyatia3_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha3\meropriyatia3_2.Designer.cs">
+      <DependentUpon>meropriyatia3_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha4\meropriyatia4_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha4\meropriyatia4_1.Designer.cs">
+      <DependentUpon>meropriyatia4_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha4\meropriyatia4_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha4\meropriyatia4_2.Designer.cs">
+      <DependentUpon>meropriyatia4_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha5\meropriyatia5_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha5\meropriyatia5_1.Designer.cs">
+      <DependentUpon>meropriyatia5_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha5\meropriyatia5_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha5\meropriyatia5_2.Designer.cs">
+      <DependentUpon>meropriyatia5_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha3\teor3_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha3\teor3_1.Designer.cs">
+      <DependentUpon>teor3_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha3\teor3_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha3\teor3_2.Designer.cs">
+      <DependentUpon>teor3_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha4\teor4_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha4\teor4_1.Designer.cs">
+      <DependentUpon>teor4_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha4\teor4_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha4\teor4_2.Designer.cs">
+      <DependentUpon>teor4_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha5\teor5_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha5\teor5_1.Designer.cs">
+      <DependentUpon>teor5_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha5\teor5_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha5\teor5_2.Designer.cs">
+      <DependentUpon>teor5_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha2\katamnes2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha2\katamnes2.Designer.cs">
+      <DependentUpon>katamnes2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha2\Meropriatiya2_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha2\Meropriatiya2_1.Designer.cs">
+      <DependentUpon>Meropriatiya2_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha2\DPO2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha2\DPO2.Designer.cs">
+      <DependentUpon>DPO2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha2\DZ2_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha2\DZ2_1.Designer.cs">
+      <DependentUpon>DZ2_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha2\DZ2_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha2\DZ2_2.Designer.cs">
+      <DependentUpon>DZ2_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha2\teor2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha2\teor2.Designer.cs">
+      <DependentUpon>teor2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha2\teor2_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha2\teor2_2.Designer.cs">
+      <DependentUpon>teor2_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha2\Fenomen2_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha2\Fenomen2_2.Designer.cs">
+      <DependentUpon>Fenomen2_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha2\Fenomen2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha2\Fenomen2.Designer.cs">
+      <DependentUpon>Fenomen2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha1\Meropriyatiya1.2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha1\Meropriyatiya1.2.Designer.cs">
+      <DependentUpon>Meropriyatiya1.2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha1\Katamnez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha1\Katamnez.Designer.cs">
+      <DependentUpon>Katamnez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha1\Meropriyatiya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha1\Meropriyatiya.Designer.cs">
+      <DependentUpon>Meropriyatiya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha1\DZ1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha1\DZ1.Designer.cs">
+      <DependentUpon>DZ1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha1\DZ2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha1\DZ2.Designer.cs">
+      <DependentUpon>DZ2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha1\DPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha1\DPO.Designer.cs">
+      <DependentUpon>DPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha1\1.1Fenomen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha1\1.1Fenomen.Designer.cs">
+      <DependentUpon>1.1Fenomen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha1\1Fenomen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha1\1Fenomen.Designer.cs">
+      <DependentUpon>1Fenomen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha1\teor1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha1\teor1.Designer.cs">
+      <DependentUpon>teor1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha1\1_1teor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha1\1_1teor.Designer.cs">
+      <DependentUpon>1_1teor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Anketa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Anketa.Designer.cs">
+      <DependentUpon>Anketa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Privetstvie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Privetstvie.Designer.cs">
+      <DependentUpon>Privetstvie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Vhod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Vhod.Designer.cs">
+      <DependentUpon>Vhod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Zadacha1\Zadacha1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha1\Zadacha1.Designer.cs">
+      <DependentUpon>Zadacha1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha10\Zadacha10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha10\Zadacha10.Designer.cs">
+      <DependentUpon>Zadacha10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha11\Zadacha11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha11\Zadacha11.Designer.cs">
+      <DependentUpon>Zadacha11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha12\Zadacha12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha12\Zadacha12.Designer.cs">
+      <DependentUpon>Zadacha12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha13\Zadacha13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha13\Zadacha13.Designer.cs">
+      <DependentUpon>Zadacha13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha14\Zadacha14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha14\Zadacha14.Designer.cs">
+      <DependentUpon>Zadacha14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha15\Zadacha15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha15\Zadacha15.Designer.cs">
+      <DependentUpon>Zadacha15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha16\Zadacha16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha16\Zadacha16.Designer.cs">
+      <DependentUpon>Zadacha16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha2\Zadacha2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha2\Zadacha2.Designer.cs">
+      <DependentUpon>Zadacha2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha3\Zadacha3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha3\Zadacha3.Designer.cs">
+      <DependentUpon>Zadacha3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha4\Zadacha4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha4\Zadacha4.Designer.cs">
+      <DependentUpon>Zadacha4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha5\Zadacha5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha5\Zadacha5.Designer.cs">
+      <DependentUpon>Zadacha5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha6\Zadacha6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha6\Zadacha6.Designer.cs">
+      <DependentUpon>Zadacha6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha7\Zadacha7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha7\Zadacha7.Designer.cs">
+      <DependentUpon>Zadacha7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha8\Zadacha8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha8\Zadacha8.Designer.cs">
+      <DependentUpon>Zadacha8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha9\Zadacha9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha9\Zadacha9.Designer.cs">
+      <DependentUpon>Zadacha9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Zadachi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Zadachi.Designer.cs">
+      <DependentUpon>Zadachi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Main\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\protokol.resx">
+      <DependentUpon>protokol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha2\Meropriatiya2_2.resx">
+      <DependentUpon>Meropriatiya2_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha2\DPO2.resx">
+      <DependentUpon>DPO2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha2\DZ2_1.resx">
+      <DependentUpon>DZ2_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha2\DZ2_2.resx">
+      <DependentUpon>DZ2_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha2\Fenomen2_2.resx">
+      <DependentUpon>Fenomen2_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha2\Fenomen2.resx">
+      <DependentUpon>Fenomen2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha1\DPO.resx">
+      <DependentUpon>DPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha1\1.1Fenomen.resx">
+      <DependentUpon>1.1Fenomen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha1\1Fenomen.resx">
+      <DependentUpon>1Fenomen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha1\DZ1.resx">
+      <DependentUpon>DZ1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha1\DZ2.resx">
+      <DependentUpon>DZ2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha1\Katamnez.resx">
+      <DependentUpon>Katamnez.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha1\Meropriyatiya.resx">
+      <DependentUpon>Meropriyatiya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha1\Meropriyatiya1.2.resx">
+      <DependentUpon>Meropriyatiya1.2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha1\teor1.resx">
+      <DependentUpon>teor1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha1\1_1teor.resx">
+      <DependentUpon>1_1teor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Anketa.resx">
+      <DependentUpon>Anketa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Privetstvie.resx">
+      <DependentUpon>Privetstvie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Vhod.resx">
+      <DependentUpon>Vhod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Zadacha1\Zadacha1.resx">
+      <DependentUpon>Zadacha1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha10\Zadacha10.resx">
+      <DependentUpon>Zadacha10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha11\Zadacha11.resx">
+      <DependentUpon>Zadacha11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha12\Zadacha12.resx">
+      <DependentUpon>Zadacha12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha13\Zadacha13.resx">
+      <DependentUpon>Zadacha13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha14\Zadacha14.resx">
+      <DependentUpon>Zadacha14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha15\Zadacha15.resx">
+      <DependentUpon>Zadacha15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha16\Zadacha16.resx">
+      <DependentUpon>Zadacha16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha2\katamnes2.resx">
+      <DependentUpon>katamnes2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha2\Meropriatiya2_1.resx">
+      <DependentUpon>Meropriatiya2_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha2\teor2.resx">
+      <DependentUpon>teor2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha2\teor2_2.resx">
+      <DependentUpon>teor2_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha2\Zadacha2.resx">
+      <DependentUpon>Zadacha2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha3\DPO3.resx">
+      <DependentUpon>DPO3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha3\DZ3_1.resx">
+      <DependentUpon>DZ3_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha3\DZ3_2.resx">
+      <DependentUpon>DZ3_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha3\Fenomen3_1.resx">
+      <DependentUpon>Fenomen3_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha3\fenomen3_2.resx">
+      <DependentUpon>fenomen3_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha3\katamnez3.resx">
+      <DependentUpon>katamnez3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha3\meropriyatia3_1.resx">
+      <DependentUpon>meropriyatia3_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha3\meropriyatia3_2.resx">
+      <DependentUpon>meropriyatia3_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha3\teor3_1.resx">
+      <DependentUpon>teor3_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha3\teor3_2.resx">
+      <DependentUpon>teor3_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha3\Zadacha3.resx">
+      <DependentUpon>Zadacha3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha4\DPO4.resx">
+      <DependentUpon>DPO4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha4\DZ4_1.resx">
+      <DependentUpon>DZ4_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha4\DZ4_2.resx">
+      <DependentUpon>DZ4_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha4\Fenomen4_1.resx">
+      <DependentUpon>Fenomen4_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha4\fenomen4_2.resx">
+      <DependentUpon>fenomen4_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha4\katamnez4.resx">
+      <DependentUpon>katamnez4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha4\meropriyatia4_1.resx">
+      <DependentUpon>meropriyatia4_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha4\meropriyatia4_2.resx">
+      <DependentUpon>meropriyatia4_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha4\teor4_1.resx">
+      <DependentUpon>teor4_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha4\teor4_2.resx">
+      <DependentUpon>teor4_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha4\Zadacha4.resx">
+      <DependentUpon>Zadacha4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha5\DPO5.resx">
+      <DependentUpon>DPO5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha5\DZ5_1.resx">
+      <DependentUpon>DZ5_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha5\DZ5_2.resx">
+      <DependentUpon>DZ5_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha5\Fenomen5_1.resx">
+      <DependentUpon>Fenomen5_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha5\fenomen5_2.resx">
+      <DependentUpon>fenomen5_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha5\katamnez5.resx">
+      <DependentUpon>katamnez5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha5\meropriyatia5_1.resx">
+      <DependentUpon>meropriyatia5_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha5\meropriyatia5_2.resx">
+      <DependentUpon>meropriyatia5_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha5\teor5_1.resx">
+      <DependentUpon>teor5_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha5\teor5_2.resx">
+      <DependentUpon>teor5_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha5\Zadacha5.resx">
+      <DependentUpon>Zadacha5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha6\DPO6.resx">
+      <DependentUpon>DPO6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha6\DZ6_1.resx">
+      <DependentUpon>DZ6_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha6\DZ6_2.resx">
+      <DependentUpon>DZ6_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha6\Fenomen6_1.resx">
+      <DependentUpon>Fenomen6_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha6\Fenomen6_2.resx">
+      <DependentUpon>Fenomen6_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha6\katamnez6.resx">
+      <DependentUpon>katamnez6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha6\meropriatia6_1.resx">
+      <DependentUpon>meropriatia6_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha6\meropriatia6_2.resx">
+      <DependentUpon>meropriatia6_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha6\teor6_1.resx">
+      <DependentUpon>teor6_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha6\teor6_2.resx">
+      <DependentUpon>teor6_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha6\Zadacha6.resx">
+      <DependentUpon>Zadacha6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha7\DPO7.resx">
+      <DependentUpon>DPO7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha7\DZ7_1.resx">
+      <DependentUpon>DZ7_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha7\DZ7_2.resx">
+      <DependentUpon>DZ7_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha7\Fenomen7_1.resx">
+      <DependentUpon>Fenomen7_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha7\Fenomen7_2.resx">
+      <DependentUpon>Fenomen7_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha7\katamnez7.resx">
+      <DependentUpon>katamnez7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha7\meropriatia7_1.resx">
+      <DependentUpon>meropriatia7_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha7\meropriatia7_2.resx">
+      <DependentUpon>meropriatia7_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha7\teor7_1.resx">
+      <DependentUpon>teor7_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha7\teor7_2.resx">
+      <DependentUpon>teor7_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha7\Zadacha7.resx">
+      <DependentUpon>Zadacha7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha8\DPO8.resx">
+      <DependentUpon>DPO8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha8\DZ8_1.resx">
+      <DependentUpon>DZ8_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha8\DZ8_2.resx">
+      <DependentUpon>DZ8_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha8\Fenomen8_1.resx">
+      <DependentUpon>Fenomen8_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha8\Fenomen8_2.resx">
+      <DependentUpon>Fenomen8_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha8\katamnez8.resx">
+      <DependentUpon>katamnez8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha8\meropriatia8_1.resx">
+      <DependentUpon>meropriatia8_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha8\meropriatia8_2.resx">
+      <DependentUpon>meropriatia8_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha8\teor8_1.resx">
+      <DependentUpon>teor8_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha8\teor8_2.resx">
+      <DependentUpon>teor8_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha8\Zadacha8.resx">
+      <DependentUpon>Zadacha8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha9\Zadacha9.resx">
+      <DependentUpon>Zadacha9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Zadachi.resx">
+      <DependentUpon>Zadachi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="loco.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
