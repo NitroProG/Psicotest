@@ -49,6 +49,120 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Zadacha10\DPO10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha10\DPO10.Designer.cs">
+      <DependentUpon>DPO10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha10\meropriatia10_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha10\meropriatia10_1.Designer.cs">
+      <DependentUpon>meropriatia10_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha10\meropriatia10_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha10\meropriatia10_2.Designer.cs">
+      <DependentUpon>meropriatia10_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha9\meropriatia9_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha9\meropriatia9_1.Designer.cs">
+      <DependentUpon>meropriatia9_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha9\meropriatia9_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha9\meropriatia9_2.Designer.cs">
+      <DependentUpon>meropriatia9_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha10\teor10_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha10\teor10_1.Designer.cs">
+      <DependentUpon>teor10_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha9\teor9_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha9\teor9_1.Designer.cs">
+      <DependentUpon>teor9_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha9\teor9_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha9\teor9_2.Designer.cs">
+      <DependentUpon>teor9_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha9\DPO9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha9\DPO9.Designer.cs">
+      <DependentUpon>DPO9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha10\DZ10_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha10\DZ10_1.Designer.cs">
+      <DependentUpon>DZ10_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha10\DZ10_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha10\DZ10_2.Designer.cs">
+      <DependentUpon>DZ10_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha9\DZ9_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha9\DZ9_1.Designer.cs">
+      <DependentUpon>DZ9_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha9\DZ9_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha9\DZ9_2.Designer.cs">
+      <DependentUpon>DZ9_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha10\fenomen10_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha10\fenomen10_1.Designer.cs">
+      <DependentUpon>fenomen10_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha10\fenomen10_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha10\fenomen10_2.Designer.cs">
+      <DependentUpon>fenomen10_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha9\fenomen9_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha9\fenomen9_1.Designer.cs">
+      <DependentUpon>fenomen9_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha9\fenomen9_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha9\fenomen9_2.Designer.cs">
+      <DependentUpon>fenomen9_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha10\Katamnez10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha10\Katamnez10.Designer.cs">
+      <DependentUpon>Katamnez10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadacha9\Katamnez9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha9\Katamnez9.Designer.cs">
+      <DependentUpon>Katamnez9.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\Admin.cs">
       <SubType>Form</SubType>
     </Compile>
