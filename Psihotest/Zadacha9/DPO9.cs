@@ -16,5 +16,24 @@ namespace Psihotest
         {
             InitializeComponent();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Zadacha9 zadacha9 = new Zadacha9();
+            zadacha9.Show();
+            this.Close();
+        }
+
+        private void DPO9_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Zadacha9 zadacha9 = new Zadacha9();
+            zadacha9.Show();
+            this.Close();
+        }
     }
 }

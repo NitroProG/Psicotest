@@ -16,5 +16,19 @@ namespace Psihotest
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DZ10_1 DZ10_1 = new DZ10_1();
+            DZ10_1.Show();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Zadacha10 zadacha10 = new Zadacha10();
+            zadacha10.Show();
+            this.Close();
+        }
     }
 }

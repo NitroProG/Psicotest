@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Zadacha10\teor10_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zadacha10\teor10_2.Designer.cs">
+      <DependentUpon>teor10_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Zadacha10\DPO10.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -783,6 +789,36 @@
     <EmbeddedResource Include="Main\protokol.resx">
       <DependentUpon>protokol.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha10\teor10_2.resx">
+      <DependentUpon>teor10_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha10\DPO10.resx">
+      <DependentUpon>DPO10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha10\DZ10_1.resx">
+      <DependentUpon>DZ10_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha10\DZ10_2.resx">
+      <DependentUpon>DZ10_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha10\fenomen10_1.resx">
+      <DependentUpon>fenomen10_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha10\fenomen10_2.resx">
+      <DependentUpon>fenomen10_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha10\Katamnez10.resx">
+      <DependentUpon>Katamnez10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha10\meropriatia10_1.resx">
+      <DependentUpon>meropriatia10_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha10\meropriatia10_2.resx">
+      <DependentUpon>meropriatia10_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha10\teor10_1.resx">
+      <DependentUpon>teor10_1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Zadacha2\Meropriatiya2_2.resx">
       <DependentUpon>Meropriatiya2_2.cs</DependentUpon>
     </EmbeddedResource>
@@ -1085,6 +1121,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Zadacha8\Zadacha8.resx">
       <DependentUpon>Zadacha8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha9\DPO9.resx">
+      <DependentUpon>DPO9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha9\DZ9_1.resx">
+      <DependentUpon>DZ9_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha9\DZ9_2.resx">
+      <DependentUpon>DZ9_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha9\fenomen9_1.resx">
+      <DependentUpon>fenomen9_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha9\fenomen9_2.resx">
+      <DependentUpon>fenomen9_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha9\Katamnez9.resx">
+      <DependentUpon>Katamnez9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha9\meropriatia9_1.resx">
+      <DependentUpon>meropriatia9_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha9\meropriatia9_2.resx">
+      <DependentUpon>meropriatia9_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha9\teor9_1.resx">
+      <DependentUpon>teor9_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadacha9\teor9_2.resx">
+      <DependentUpon>teor9_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Zadacha9\Zadacha9.resx">
       <DependentUpon>Zadacha9.cs</DependentUpon>
