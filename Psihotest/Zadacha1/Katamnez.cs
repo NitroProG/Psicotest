@@ -44,6 +44,12 @@ namespace Psihotest
         private void timer1_Tick(object sender, EventArgs e)
         {
             Program.time1 = Program.time1 + 1;
+            Program.katamt1 = Program.katamt1 + 1;
+        }
+
+        private void Katamnez_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

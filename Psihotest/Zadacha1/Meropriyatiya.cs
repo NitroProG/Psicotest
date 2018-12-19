@@ -39,6 +39,12 @@ namespace Psihotest
         private void timer1_Tick(object sender, EventArgs e)
         {
             Program.time1 = Program.time1 + 1;
+            Program.meroprt = Program.meroprt + 1;
+        }
+
+        private void Meropriyatiya_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

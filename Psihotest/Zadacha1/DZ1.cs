@@ -48,6 +48,7 @@ namespace Psihotest
         private void timer1_Tick(object sender, EventArgs e)
         {
             Program.time1 = Program.time1 + 1;
+            Program.dzt1 = Program.dzt1 + 1;
         }
     }
 }

@@ -298,5 +298,12 @@ namespace Psihotest
                 label8.Text = "Решено";
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            protokol protokol = new protokol();
+            protokol.Show();
+            this.Close();
+        }
     }
 }

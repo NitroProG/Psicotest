@@ -25,6 +25,13 @@ namespace Psihotest
         public static string mestrab;
         public static string godob;
         public static string vozr;
+        public static int fenomt1;
+        public static int teort1;
+        public static int dpot1;
+        public static int dzt1;
+        public static int katamt1;
+        public static int meroprt;
+
 
         public static string fenomenologiya1;
         public static string glavsved1;

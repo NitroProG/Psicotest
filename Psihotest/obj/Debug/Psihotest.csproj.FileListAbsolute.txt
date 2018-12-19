@@ -524,3 +524,6 @@ C:\Users\Kirito\Documents\GitHub\Psicotest\Psihotest\obj\Debug\Psihotest.csproj.
 C:\Users\Kirito\Documents\GitHub\Psicotest\Psihotest\obj\Debug\Psihotest.csproj.CoreCompileInputs.cache
 C:\Users\Kirito\Documents\GitHub\Psicotest\Psihotest\obj\Debug\Psihotest.exe
 C:\Users\Kirito\Documents\GitHub\Psicotest\Psihotest\obj\Debug\Psihotest.pdb
+C:\Users\Kirito\Documents\GitHub\Psicotest\Psihotest\bin\Debug\Psihotest.exe.config
+C:\Users\Kirito\Documents\GitHub\Psicotest\Psihotest\bin\Debug\Psihotest.exe
+C:\Users\Kirito\Documents\GitHub\Psicotest\Psihotest\bin\Debug\Psihotest.pdb

@@ -124,7 +124,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 1;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Katamnez
@@ -144,6 +144,7 @@
             this.Name = "Katamnez";
             this.Text = "Katamnez";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Katamnez_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

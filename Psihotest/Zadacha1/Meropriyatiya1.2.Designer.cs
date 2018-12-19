@@ -123,7 +123,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 1;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Meropriyatiya1
@@ -143,6 +143,7 @@
             this.Name = "Meropriyatiya1";
             this.Text = "Meropriyatiya1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Meropriyatiya1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
